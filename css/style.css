@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* header styles*/
+header {
+  width: 100%;
+  height: 54px;
+  background-color: #F29F05;
+  position: fixed;
+}
+
+.logoContainer {
+  width: 120px;
+  height: 28px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 2%;
+}
+
+.logoImage {
+  width: 120px;
+  height: 28px;
+}
+
+/*Haburger Menu*/
+.hamburgerMenu {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 30px;
+  height: 30px;
+  border-top: solid #91E06B 6px;
+  cursor: pointer;
+}
+
+.hamburgerMenu::before {
+  content: "";
+  position: absolute;
+  top: 24%;
+  width: 100%;
+  border-bottom: solid #91E06B 6px;
+}
+
+.hamburgerMenu::after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  border-bottom: solid #91E06B 6px;
+}
+
+/* Enter the menu */
+.enteringMenu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #BF2604;
+  opacity: 0.9;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+/* btn   X */
+.xLogo {
+  position: absolute;
+  display: block;
+  right: 3%;
+  top: 2%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.xLogo::before {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0px;
+  top: -1px;
+  width: 37px;
+  border-bottom: #91E06B solid 5px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.xLogo::after {
+  content: "";
+  display: block;
+  position: relative;
+  right: 11px;
+  top: -6px;
+  width: 37px;
+  border-bottom: #91E06B dashed 5px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/*Haburger Menu end*/
+/*# sourceMappingURL=style.css.map */
