@@ -1,4 +1,8 @@
 /* header styles*/
+.wrapper {
+  transition: 0.2s;
+}
+
 header {
   width: 100%;
   height: 54px;
@@ -19,6 +23,35 @@ header {
 .logoImage {
   width: 120px;
   height: 28px;
+}
+
+/* "Nazwa sekcji pamietaj!!! oraz ustalić na koncu wartoci by sie łatnie zmiejszało     */
+.reductionWrapper {
+  animation: reductionWrapper linear 0.2s forwards;
+}
+
+.enlargenWrapper {
+  animation: enlargenWrapper linear 0.2s forwards;
+}
+
+
+@keyframes reductionWrapper {
+  0% {}
+
+  100% {
+    transform: scale(0.90, 0.90);
+  }
+}
+
+
+@keyframes enlargenWrapper {
+  0% {
+    transform: scale(0.90, 0.90);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*Haburger Menu*/
@@ -64,7 +97,7 @@ header {
 
 }
 
-/* btn   X */
+/* btn X */
 .xLogo {
   position: absolute;
   display: block;
@@ -99,5 +132,41 @@ header {
   transform-origin: right;
   transform: rotate(-45deg);
 }
+
+/* anchor for Ista*/
+.istaIcon {
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+
+
+/*side menu*/
+.sideMenu {
+  display: block;
+  position: relative;
+  top: 54px;
+  left: 5%;
+  font-size: 21px;
+  width: 90%;
+}
+
+.sideMenuList {
+  list-style-type: none;
+
+  li {
+    line-height: 45px;
+    height: 45px;
+    font-weight: bold;
+    padding-left: 5px;
+
+  }
+
+  li:active {
+    background-color: blue;
+  }
+}
+
 
 /*Haburger Menu end*/

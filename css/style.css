@@ -1,11 +1,23 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 /* header styles*/
+.wrapper {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 header {
   width: 100%;
   height: 54px;
@@ -26,6 +38,57 @@ header {
 .logoImage {
   width: 120px;
   height: 28px;
+}
+
+/* "Nazwa sekcji pamietaj!!! oraz ustalić na koncu wartoci by sie łatnie zmiejszało     */
+.reductionWrapper {
+  -webkit-animation: reductionWrapper linear 0.2s forwards;
+          animation: reductionWrapper linear 0.2s forwards;
+}
+
+.enlargenWrapper {
+  -webkit-animation: enlargenWrapper linear 0.2s forwards;
+          animation: enlargenWrapper linear 0.2s forwards;
+}
+
+@-webkit-keyframes reductionWrapper {
+  0% {
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+}
+
+@keyframes reductionWrapper {
+  0% {
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+}
+
+@-webkit-keyframes enlargenWrapper {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes enlargenWrapper {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 /*Haburger Menu*/
@@ -70,7 +133,7 @@ header {
   transition: 0.5s linear;
 }
 
-/* btn   X */
+/* btn X */
 .xLogo {
   position: absolute;
   display: block;
@@ -107,6 +170,39 @@ header {
           transform-origin: right;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/* anchor for Ista*/
+.istaIcon {
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+
+/*side menu*/
+.sideMenu {
+  display: block;
+  position: relative;
+  top: 54px;
+  left: 5%;
+  font-size: 21px;
+  width: 90%;
+}
+
+.sideMenuList {
+  list-style-type: none;
+}
+
+.sideMenuList li {
+  line-height: 45px;
+  height: 45px;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.sideMenuList li:active {
+  background-color: blue;
 }
 
 /*Haburger Menu end*/
