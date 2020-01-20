@@ -34,7 +34,6 @@ header {
   animation: enlargenWrapper linear 0.2s forwards;
 }
 
-
 @keyframes reductionWrapper {
   0% {}
 
@@ -42,7 +41,6 @@ header {
     transform: scale(0.90, 0.90);
   }
 }
-
 
 @keyframes enlargenWrapper {
   0% {
@@ -55,7 +53,6 @@ header {
 }
 
 /*Haburger Menu*/
-
 .hamburgerMenu {
   position: absolute;
   top: 50%;
@@ -75,13 +72,24 @@ header {
   border-bottom: solid $color-green 6px;
 }
 
-
 .hamburgerMenu::after {
   content: "";
   position: absolute;
   top: 70%;
   width: 100%;
   border-bottom: solid $color-green 6px;
+}
+
+.hamburgerMenu:active::before {
+  border-bottom: solid black 6px;
+}
+
+.hamburgerMenu:active::after {
+  border-bottom: solid black 6px;
+}
+
+.hamburgerMenu:active {
+  border-top: solid black 6px;
 }
 
 /* Enter the menu */
@@ -93,7 +101,7 @@ header {
   height: 100%;
   background-color: $color-hamburgerMenu;
   opacity: 0.9;
-  transition: 0.5s linear;
+  transition: 0.6s linear;
 
 }
 
@@ -133,6 +141,10 @@ header {
   transform: rotate(-45deg);
 }
 
+.xLogo:active::after {
+  border-bottom: black dashed 5px;
+}
+
 /* anchor for Ista*/
 .istaIcon {
   font-size: 40px;
@@ -140,7 +152,6 @@ header {
   top: 5px;
   left: 20px;
 }
-
 
 /*side menu*/
 .sideMenu {
@@ -159,7 +170,7 @@ header {
     line-height: 45px;
     height: 45px;
     font-weight: bold;
-    padding-left: 5px;
+    padding-left: 10px;
 
   }
 
@@ -167,6 +178,5 @@ header {
     background-color: blue;
   }
 }
-
-
 /*Haburger Menu end*/
+

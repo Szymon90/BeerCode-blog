@@ -1,0 +1,64 @@
+/*banner style*/
+.banner {
+    position: relative;
+    top: 54px;
+    height: 400px;
+    width: 100%;
+    background-color: brown;
+}
+
+.glassImage {
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    width: 47%;
+    height: 88%;
+    z-index: 1;
+}
+
+.glassBox1 {
+    position: absolute;
+    width: 100px;
+    height: 66px;
+    left: 18%;
+    bottom: 10%;
+    background-color: rosybrown;
+}
+
+.glassBox2 {
+    position: absolute;
+    width: 103px;
+    height: 66px;
+    left: 16%;
+    bottom: 26%;
+    background-color: chartreuse;
+}
+
+.glassBox3 {
+    position: absolute;
+    width: 115px;
+    height: 66px;
+    left: 15%;
+    bottom: 42%;
+    background-color: gray;
+}
+
+.glassBox4 {
+    position: absolute;
+    width: 143px;
+    height: 65px;
+    left: 12%;
+    bottom: 58%;
+    background-color: blueviolet;
+}
+
+.glassBox5 {
+    position: absolute;
+    width: 143px;
+    height: 38px;
+    left: 12%;
+    bottom: 74%;
+    background-color: wheat;
+}
+
+/*banner style end*/ 
