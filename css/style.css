@@ -243,46 +243,58 @@ header {
 .glassBox1 {
   position: absolute;
   width: 100px;
-  height: 66px;
+  height: 0;
   left: 18%;
   bottom: 10%;
-  background-color: rosybrown;
+  background-color: #FCF752;
 }
 
 .glassBox2 {
   position: absolute;
   width: 103px;
-  height: 66px;
+  height: 0;
   left: 16%;
   bottom: 26%;
-  background-color: chartreuse;
+  background-color: #D7BB2C;
 }
 
 .glassBox3 {
   position: absolute;
   width: 115px;
-  height: 66px;
+  height: 0;
   left: 15%;
   bottom: 42%;
-  background-color: gray;
+  background-color: #BC6633;
 }
 
 .glassBox4 {
   position: absolute;
   width: 143px;
-  height: 65px;
+  height: 0;
   left: 12%;
   bottom: 58%;
-  background-color: blueviolet;
+  background-color: #070709;
 }
 
 .glassBox5 {
   position: absolute;
   width: 143px;
-  height: 38px;
+  height: 0;
   left: 12%;
   bottom: 74%;
-  background-color: wheat;
+  background-color: #F2F0EB;
+}
+
+.pouringBeer {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  height: 66px;
+}
+
+.foam {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  height: 33px;
 }
 
 /*banner style end*/

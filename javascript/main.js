@@ -14,3 +14,36 @@ xLogo.addEventListener("click", () => {
     wrapper.classList.remove("reductionWrapper");
     wrapper.classList.add("enlargenWrapper")
 });
+
+
+// pouring Beer in banner
+const glassInBaner = () => {
+    let glassBoxTebel = [
+        document.querySelector(".glassBox1"),
+        document.querySelector(".glassBox2"),
+        document.querySelector(".glassBox3"),
+        document.querySelector(".glassBox4"),
+        document.querySelector(".glassBox5")
+    ]
+    let pouringBeer = (i) => {
+        glassBoxTebel[i].classList.add("pouringBeer")
+    }
+    pouringBeer(0)
+
+    setTimeout(() => {
+        pouringBeer(1)
+    }, 1000)
+    
+    setTimeout(() => {
+        pouringBeer(2)
+    }, 2000)
+    
+    setTimeout(() => {
+        pouringBeer(3)
+    }, 3000)
+    
+    setTimeout(() => {
+        glassBoxTebel[4].classList.add("foam")
+    }, 4000)
+}
+glassInBaner()
