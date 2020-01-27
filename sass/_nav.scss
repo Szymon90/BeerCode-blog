@@ -1,6 +1,7 @@
 /* header styles*/
 .wrapper {
   transition: 0.2s;
+ 
 }
 
 header {
@@ -8,6 +9,7 @@ header {
   height: 54px;
   background-color: $color-header;
   position: fixed;
+  z-index: 2;
 
 }
 
@@ -25,7 +27,7 @@ header {
   height: 28px;
 }
 
-/* "Nazwa sekcji pamietaj!!! oraz ustalić na koncu wartoci by sie łatnie zmiejszało     */
+/* "Nazwa sekcji pamietaj!!!  */
 .reductionWrapper {
   animation: reductionWrapper linear 0.2s forwards;
 }
@@ -38,13 +40,13 @@ header {
   0% {}
 
   100% {
-    transform: scale(0.90, 0.90);
+    transform: scale(0.90, 0.99);
   }
 }
 
 @keyframes enlargenWrapper {
   0% {
-    transform: scale(0.90, 0.90);
+    transform: scale(0.90, 0.99);
   }
 
   100% {
@@ -94,7 +96,7 @@ header {
 
 /* Enter the menu */
 .enteringMenu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -100%;
   width: 100%;

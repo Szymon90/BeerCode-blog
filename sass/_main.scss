@@ -1,0 +1,28 @@
+/*main style */
+main {
+    position: relative;
+    top: 54px;
+}
+
+.allSections {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleSection {
+    position: relative;
+    left: -90px;
+}
+
+.allArticls {
+    background-color: gray;
+    width: 328px;
+    height: 101px;
+}
+
+.markedTitle {
+    background-color: $color-green;
+}

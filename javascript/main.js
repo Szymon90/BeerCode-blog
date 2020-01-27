@@ -46,4 +46,3 @@ const glassInBaner = () => {
         glassBoxTebel[4].classList.add("foam")
     }, 4000)
 }
-glassInBaner()
