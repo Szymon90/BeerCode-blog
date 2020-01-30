@@ -1,3 +1,4 @@
+/*reset start */
 * {
   margin: 0;
   padding: 0;
@@ -11,327 +12,180 @@ a {
   text-decoration: none;
 }
 
-/* header styles*/
-.wrapper {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
+/*reset end */
+/*header style start */
 header {
   width: 100%;
-  height: 54px;
-  background-color: #F29F05;
+  height: 50px;
+  position: relative;
+  background-color: #F2CE00;
   position: fixed;
-  z-index: 2;
 }
 
-.logoContainer {
-  width: 120px;
-  height: 28px;
+.logo {
+  height: 30px;
+  width: 130px;
   position: relative;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  left: 2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 4%;
 }
 
-.logoImage {
-  width: 120px;
-  height: 28px;
+.logoImg {
+  height: 30px;
+  width: 130px;
 }
 
-/* "Nazwa sekcji pamietaj!!!  */
-.reductionWrapper {
-  -webkit-animation: reductionWrapper linear 0.2s forwards;
-          animation: reductionWrapper linear 0.2s forwards;
-}
-
-.enlargenWrapper {
-  -webkit-animation: enlargenWrapper linear 0.2s forwards;
-          animation: enlargenWrapper linear 0.2s forwards;
-}
-
-@-webkit-keyframes reductionWrapper {
-  0% {
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.99);
-            transform: scale(0.9, 0.99);
-  }
-}
-
-@keyframes reductionWrapper {
-  0% {
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.99);
-            transform: scale(0.9, 0.99);
-  }
-}
-
-@-webkit-keyframes enlargenWrapper {
-  0% {
-    -webkit-transform: scale(0.9, 0.99);
-            transform: scale(0.9, 0.99);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes enlargenWrapper {
-  0% {
-    -webkit-transform: scale(0.9, 0.99);
-            transform: scale(0.9, 0.99);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-/*Haburger Menu*/
-.hamburgerMenu {
+/*header style end */
+/*hamburger menu start */
+.hamburger {
   position: absolute;
   top: 50%;
-  right: 3%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  width: 30px;
-  height: 30px;
-  border-top: solid #91E06B 6px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 4%;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 0;
+  border-top: #6CA001 5px solid;
   cursor: pointer;
 }
 
-.hamburgerMenu::before {
+.hamburger::after,
+.hamburger::before {
   content: "";
   position: absolute;
-  top: 24%;
-  width: 100%;
-  border-bottom: solid #91E06B 6px;
-}
-
-.hamburgerMenu::after {
-  content: "";
-  position: absolute;
-  top: 70%;
-  width: 100%;
-  border-bottom: solid #91E06B 6px;
-}
-
-.hamburgerMenu:active::before {
-  border-bottom: solid black 6px;
-}
-
-.hamburgerMenu:active::after {
-  border-bottom: solid black 6px;
-}
-
-.hamburgerMenu:active {
-  border-top: solid black 6px;
-}
-
-/* Enter the menu */
-.enteringMenu {
-  position: fixed;
   top: 0;
-  left: -100%;
+  left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #BF2604;
-  opacity: 0.9;
-  -webkit-transition: 0.6s linear;
-  transition: 0.6s linear;
+  border-top: #6CA001 5px solid;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
 }
 
-/* btn X */
-.xLogo {
-  position: absolute;
-  display: block;
-  right: 3%;
-  top: 2%;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+.hamburger::before {
+  -webkit-transform: translateY(19px);
+          transform: translateY(19px);
 }
 
-.xLogo::before {
-  content: "";
-  display: block;
-  position: relative;
-  left: 0px;
-  top: -1px;
-  width: 37px;
-  border-bottom: #91E06B solid 5px;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.hamburger--active {
+  border-top: none;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
-.xLogo::after {
-  content: "";
-  display: block;
-  position: relative;
-  right: 11px;
-  top: -6px;
-  width: 37px;
-  border-bottom: #91E06B dashed 5px;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+.hamburger--active::after {
+  -webkit-transform: translateY(16px) rotate(45deg);
+          transform: translateY(16px) rotate(45deg);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-.xLogo:active::after {
-  border-bottom: black dashed 5px;
+.hamburger--active::before {
+  -webkit-transform: translateY(16px) rotate(-45deg);
+          transform: translateY(16px) rotate(-45deg);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-/* anchor for Ista*/
-.istaIcon {
-  font-size: 40px;
-  position: relative;
-  top: 5px;
-  left: 20px;
-}
-
-/*side menu*/
+/*hamburger menu end */
+/*side Meunu*/
 .sideMenu {
-  display: block;
-  position: relative;
-  top: 54px;
-  left: 5%;
-  font-size: 21px;
-  width: 90%;
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: blue;
+  left: -60%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-.sideMenuList {
+.sideMenuNavi {
+  position: relative;
+  top: 2%;
+  left: 6%;
   list-style-type: none;
 }
 
-.sideMenuList li {
-  line-height: 45px;
-  height: 45px;
-  font-weight: bold;
-  padding-left: 10px;
+.menuElemnet {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.sideMenuList li:active {
-  background-color: blue;
+.sideMenu--active {
+  left: 0;
 }
 
-/*Haburger Menu end*/
-/*banner style*/
-.banner {
+.baner {
   position: relative;
-  top: 54px;
-  height: 400px;
+  top: 50px;
+  height: 360px;
   width: 100%;
-  background-color: brown;
 }
 
-.glassImage {
-  position: absolute;
-  top: 7%;
-  left: 8%;
-  width: 47%;
-  height: 88%;
-  z-index: 1;
+.glassImg {
+  width: 160px;
+  height: 330px;
 }
 
-.glassBox1 {
-  position: absolute;
-  width: 100px;
-  height: 0;
-  left: 18%;
-  bottom: 10%;
-  background-color: #FCF752;
+.glass {
+  width: 160px;
+  height: 330px;
+  position: relative;
+  top: 10px;
+  left: 28px;
 }
 
-.glassBox2 {
+.beerContainer1 {
   position: absolute;
-  width: 103px;
-  height: 0;
-  left: 16%;
-  bottom: 26%;
-  background-color: #D7BB2C;
+  bottom: 20px;
+  left: 33px;
+  width: 89px;
+  height: 60px;
+  background-color: #F2CE00;
+  z-index: -1;
 }
 
-.glassBox3 {
+.beerContainer2 {
   position: absolute;
-  width: 115px;
-  height: 0;
-  left: 15%;
-  bottom: 42%;
-  background-color: #BC6633;
+  bottom: 80px;
+  left: 31px;
+  width: 94px;
+  height: 60px;
+  background-color: #DE7A25;
+  z-index: -1;
 }
 
-.glassBox4 {
+.beerContainer3 {
   position: absolute;
-  width: 143px;
-  height: 0;
-  left: 12%;
-  bottom: 58%;
-  background-color: #070709;
+  bottom: 140px;
+  left: 22px;
+  width: 111px;
+  height: 60px;
+  background-color: #650F0E;
+  z-index: -1;
 }
 
-.glassBox5 {
+.beerContainer4 {
   position: absolute;
-  width: 143px;
-  height: 0;
-  left: 12%;
-  bottom: 74%;
+  bottom: 198px;
+  left: 12px;
+  width: 135px;
+  height: 60px;
+  background-color: #241113;
+  z-index: -1;
+}
+
+.beerContainer5 {
+  position: absolute;
+  bottom: 257px;
+  left: 10px;
+  width: 134px;
+  height: 32px;
   background-color: #F2F0EB;
-}
-
-.pouringBeer {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  height: 66px;
-}
-
-.foam {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  height: 33px;
-}
-
-/*banner style end*/
-/*main style */
-main {
-  position: relative;
-  top: 54px;
-}
-
-.allSections {
-  height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.titleSection {
-  position: relative;
-  left: -90px;
-}
-
-.allArticls {
-  background-color: gray;
-  width: 328px;
-  height: 101px;
-}
-
-.markedTitle {
-  background-color: #91E06B;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

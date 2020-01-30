@@ -1,0 +1,24 @@
+/*header style start */
+header {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: $color-beer1;
+    position: fixed;
+}
+
+.logo {
+    height: 30px;
+    width: 130px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4%;
+}
+
+.logoImg {
+    height: 30px;
+    width: 130px;
+}
+
+/*header style end */

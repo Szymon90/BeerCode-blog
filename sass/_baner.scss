@@ -1,0 +1,69 @@
+.baner {
+    position: relative;
+    top: 50px;
+    height: 360px;
+    width: 100%;
+}
+
+.glassImg {
+    width: 160px;
+    height: 330px;
+}
+
+.glass {
+    width: 160px;
+    height: 330px;
+    position: relative;
+    top: 10px;
+    left: 28px;
+    }
+
+.beerContainer1 {
+    position: absolute;
+    bottom: 20px;
+    left: 33px;
+    width: 89px;
+    height: 60px;
+    background-color: $color-beer1;
+    z-index: -1;
+}
+
+.beerContainer2 {
+    position: absolute;
+    bottom: 80px;
+    left: 31px;
+    width: 94px;
+    height: 60px;
+    background-color: $color-beer2;
+    z-index: -1;
+}
+
+.beerContainer3 {
+    position: absolute;
+    bottom: 140px;
+    left: 22px;
+    width: 111px;
+    height: 60px;
+    background-color: $color-beer3;
+    z-index: -1;
+}
+
+.beerContainer4 {
+    position: absolute;
+    bottom: 198px;
+    left: 12px;
+    width: 135px;
+    height: 60px;
+    background-color: $color-beer4;
+    z-index: -1;
+}
+
+.beerContainer5 {
+    position: absolute;
+    bottom: 257px;
+    left: 10px;
+    width: 134px;
+    height: 32px;
+    background-color: $color-beer5;
+    z-index: -1;
+}

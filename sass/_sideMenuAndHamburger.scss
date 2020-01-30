@@ -1,0 +1,79 @@
+/*hamburger menu start */
+.hamburger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4%;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0;
+    border-top: $color-hop 5px solid;
+    cursor: pointer;
+
+
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: $color-hop 5px solid;
+    transform: translateY(7px);
+}
+
+.hamburger::before {
+    transform: translateY(19px);
+}
+
+.hamburger--active {
+    border-top: none;
+    transition: 1s linear;
+}
+
+.hamburger--active::after {
+    transform: translateY(16px) rotate(45deg);
+    transition: 0.3s linear;
+}
+
+.hamburger--active::before {
+    transform: translateY(16px) rotate(-45deg);
+    transition: 0.3s linear;
+}
+
+
+
+/*hamburger menu end */
+
+/*side Meunu*/
+.sideMenu {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+    left: -60%;
+    transition: 0.3s linear;
+
+
+}
+
+.sideMenuNavi {
+    position: relative;
+    top: 2%;
+    left: 6%;
+    list-style-type: none;
+
+}
+
+.menuElemnet {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sideMenu--active {
+    left: 0;
+}
