@@ -20,6 +20,7 @@ header {
   position: relative;
   background-color: #F2CE00;
   position: fixed;
+  z-index: 2;
 }
 
 .logo {
@@ -93,14 +94,15 @@ header {
 /*hamburger menu end */
 /*side Meunu*/
 .sideMenu {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 60%;
-  height: 100%;
-  background-color: blue;
+  height: 100vh;
+  background-color: #6CA001;
   left: -60%;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  z-index: 3;
 }
 
 .sideMenuNavi {
@@ -144,9 +146,11 @@ header {
   bottom: 20px;
   left: 33px;
   width: 89px;
-  height: 60px;
+  height: 0;
   background-color: #F2CE00;
   z-index: -1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
 .beerContainer2 {
@@ -154,9 +158,11 @@ header {
   bottom: 80px;
   left: 31px;
   width: 94px;
-  height: 60px;
+  height: 0;
   background-color: #DE7A25;
   z-index: -1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
 .beerContainer3 {
@@ -164,9 +170,11 @@ header {
   bottom: 140px;
   left: 22px;
   width: 111px;
-  height: 60px;
+  height: 0;
   background-color: #650F0E;
   z-index: -1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
 .beerContainer4 {
@@ -174,9 +182,11 @@ header {
   bottom: 198px;
   left: 12px;
   width: 135px;
-  height: 60px;
+  height: 0;
   background-color: #241113;
   z-index: -1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
 .beerContainer5 {
@@ -184,8 +194,123 @@ header {
   bottom: 257px;
   left: 10px;
   width: 134px;
-  height: 32px;
+  height: 0;
   background-color: #F2F0EB;
   z-index: -1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
+
+.beerContainerGrow {
+  height: 60px;
+}
+
+.beerContainer5Grow {
+  height: 32px;
+}
+
+/*main style start*/
+.section1 {
+  position: relative;
+  top: 50px;
+  left: 17px;
+  width: 326px;
+  height: 554px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.allArcticle {
+  width: 306px;
+  height: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.titleSection {
+  position: relative;
+  font-size: 20px;
+  width: 250px;
+  left: -13%;
+}
+
+.sectionsWithReadMore {
+  position: relative;
+  top: 50px;
+  left: 17px;
+  width: 326px;
+  height: 663px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.readMore {
+  position: relative;
+  font-size: 16px;
+  width: 121px;
+  height: 35px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 35px;
+}
+
+.readMore::after {
+  content: "";
+  width: 121px;
+  height: 35px;
+  position: absolute;
+  left: -4px;
+  top: 2px;
+  background-color: #F2CE00;
+  z-index: -1;
+  -webkit-transition: 0, 2s linear;
+  transition: 0, 2s linear;
+}
+
+.readMore:hover:after {
+  left: 1px;
+  top: -5px;
+}
+
+.backgroundTitle {
+  background-color: #6CA001;
+}
+
+.imgArcticle {
+  width: 153px;
+  height: 93px;
+}
+
+.tetlearcticle {
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+/*main stele end*/
 /*# sourceMappingURL=style.css.map */

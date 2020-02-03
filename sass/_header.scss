@@ -5,6 +5,7 @@ header {
     position: relative;
     background-color: $color-beer1;
     position: fixed;
+    z-index: 2;
 }
 
 .logo {

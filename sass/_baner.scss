@@ -23,9 +23,10 @@
     bottom: 20px;
     left: 33px;
     width: 89px;
-    height: 60px;
+    height: 0;
     background-color: $color-beer1;
     z-index: -1;
+    transition: 1s linear ;
 }
 
 .beerContainer2 {
@@ -33,9 +34,10 @@
     bottom: 80px;
     left: 31px;
     width: 94px;
-    height: 60px;
+    height: 0;
     background-color: $color-beer2;
     z-index: -1;
+    transition: 1s linear ;
 }
 
 .beerContainer3 {
@@ -43,9 +45,10 @@
     bottom: 140px;
     left: 22px;
     width: 111px;
-    height: 60px;
+    height: 0;
     background-color: $color-beer3;
     z-index: -1;
+    transition: 1s linear ;
 }
 
 .beerContainer4 {
@@ -53,9 +56,10 @@
     bottom: 198px;
     left: 12px;
     width: 135px;
-    height: 60px;
+    height: 0;
     background-color: $color-beer4;
     z-index: -1;
+    transition: 1s linear ;
 }
 
 .beerContainer5 {
@@ -63,7 +67,15 @@
     bottom: 257px;
     left: 10px;
     width: 134px;
-    height: 32px;
+    height:0;
     background-color: $color-beer5;
     z-index: -1;
+    transition: 1s linear ;
+}
+
+.beerContainerGrow{
+height: 60px;
+}
+.beerContainer5Grow{
+    height: 32px;  
 }

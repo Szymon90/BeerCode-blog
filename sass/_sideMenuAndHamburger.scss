@@ -10,8 +10,6 @@
     border: 0;
     border-top: $color-hop 5px solid;
     cursor: pointer;
-
-
 }
 
 .hamburger::after,
@@ -44,19 +42,18 @@
     transition: 0.3s linear;
 }
 
-
-
 /*hamburger menu end */
 
 /*side Meunu*/
 .sideMenu {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 60%;
-    height: 100%;
-    background-color: blue;
+    height: 100vh;
+    background-color:$color-hop;
     left: -60%;
     transition: 0.3s linear;
+    z-index: 3;
 
 
 }
