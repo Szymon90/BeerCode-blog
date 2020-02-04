@@ -297,6 +297,11 @@ header {
   top: -5px;
 }
 
+.firstWordTitle {
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
 .backgroundTitle {
   background-color: #6CA001;
 }
@@ -304,6 +309,15 @@ header {
 .imgArcticle {
   width: 153px;
   height: 93px;
+}
+
+.containerForImgArticle {
+  width: 153px;
+  height: 93px;
+  font-size: 50px;
+  color: #6CA001;
+  background: rgba(242, 206, 0, 0.54);
+  text-align: center;
 }
 
 .tetlearcticle {
