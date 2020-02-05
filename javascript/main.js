@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", beerInGlasse());
 // article title background scroll
 const titleBackgroundScrioll = () => {
     const firstWord = document.querySelectorAll(".firstWordTitle");
+    const screenHeight = [340, 415, 1101, 1787, 2479];
     let currentScroll = window.scrollY;
-    if (currentScroll <= 340) firstWord[0].classList.add("backgroundTitle")
-    if (currentScroll >= 415 ) firstWord[1].classList.add("backgroundTitle")
-    if (currentScroll >= 1101) firstWord[2].classList.add("backgroundTitle")
-    if (currentScroll >= 1787 ) firstWord[3].classList.add("backgroundTitle")
-    if (currentScroll >= 2479) firstWord[4].classList.add("backgroundTitle")
+    if (currentScroll <= screenHeight[0]) firstWord[0].classList.add("backgroundTitle")
+    for (let i = 1; i < 5; i++) {
+        if (currentScroll >= screenHeight[i]) firstWord[i].classList.add("backgroundTitle")
+    }
 }
 
 window.addEventListener("scroll", titleBackgroundScrioll)
