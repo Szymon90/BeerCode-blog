@@ -132,15 +132,20 @@
                 <a href="#" class="readMore">Czytaj wiecej</a>
             </section>
             <section class="contact">
+                <h2 class="formTitle"><span class="backgroundTitle">Kontakt</span></h2>
                 <form>
-                    <label><input type="text" placeholder="Imie" class="windowForm"></label>
-                    <label><input type="email" placeholder="e-mail" class="windowForm"></label>
-                    <label><textarea name="message" id="" cols="15" rows="5" placeholder="W czym mogę pomóc"
-                            class="textereaFrom"></textarea></label>
-                            <button type="submit" class="formBtn">Wyśli</button>
+                    <label><input type="text" placeholder="Imie (min. 3 znaki)" class="windowForm yourName"
+                            pattern="[a-zA-Z]{3,20}" required></label>
+                    <label><input type="email" placeholder="e-mail" class="windowForm yourEmail" required></label>
+                    <label><textarea name="message" id="" cols="15" rows="5" placeholder="W czym mogę pomóc?"
+                            class="textereaFrom yourMessage" required></textarea></label>
+                    <button type="submit" class="formBtn">Wyśli</button>
                 </form>
             </section>
         </main>
+        <footer>
+            <p> &copy; Szymon R 2020r  </p>
+        </footer>
     </div>
     <aside class="sideMenu">
         <ul class="sideMenuNavi">

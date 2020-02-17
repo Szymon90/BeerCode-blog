@@ -331,7 +331,13 @@ header {
   position: relative;
   top: 50px;
   width: 100%;
-  height: 600px;
+  height: 500px;
+}
+
+.formTitle {
+  margin-bottom: 40px;
+  position: relative;
+  left: 11px;
 }
 
 form {
@@ -357,12 +363,19 @@ form {
 .windowForm {
   width: 250px;
   height: 35px;
+  border: none;
+  font-size: 16px;
+  padding-left: 5px;
 }
 
 .textereaFrom {
   width: 250px;
   height: 100px;
   resize: none;
+  border: none;
+  font-size: 18px;
+  padding-top: 4px;
+  padding-left: 5px;
 }
 
 .formBtn {
@@ -390,7 +403,6 @@ form {
 
 .formBtn::before {
   content: "";
-  content: "";
   position: absolute;
   top: 6px;
   left: -3px;
@@ -401,5 +413,34 @@ form {
   z-index: 0;
 }
 
+.formBtn:hover:before {
+  top: -3px;
+  left: 6px;
+}
+
+input:not(:placeholder-shown):invalid {
+  -webkit-box-shadow: 1px 1px 3px 2px red;
+          box-shadow: 1px 1px 3px 2px red;
+}
+
+input:not(:placeholder-shown):valid {
+  -webkit-box-shadow: 1px 1px 3px 2px #6CA001;
+          box-shadow: 1px 1px 3px 2px #6CA001;
+}
+
 /*main stele end*/
+/*footer */
+footer {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  background-color: #F2CE00;
+}
+
+.wrapper {
+  height: 4270px;
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,13 @@
 //hamburger menu 
 const hamburger = document.querySelector(".hamburger");
-const sideMenu = document.querySelector(".sideMenu")
-const wrapper = document.querySelector(".wrapper")
+const sideMenu = document.querySelector(".sideMenu");
+const wrapper = document.querySelector(".wrapper");
 
-hamburger.addEventListener("click", () => {
+const hamburgerBtn = () => {
     hamburger.classList.toggle("hamburger--active")
     sideMenu.classList.toggle("sideMenu--active")
-})
+}
+
 //Beer glass animation 
 const beerInGlasse = () => {
     let beerContaine = document.querySelectorAll(".beerContainer");
@@ -22,8 +23,6 @@ const beerInGlasse = () => {
     }
 }
 
-document.addEventListener("DOMContentLoaded", beerInGlasse());
-
 // article title background scroll
 const titleBackgroundScrioll = () => {
     const firstWord = document.querySelectorAll(".firstWordTitle");
@@ -33,6 +32,10 @@ const titleBackgroundScrioll = () => {
     for (let i = 1; i < 5; i++) {
         if (currentScroll >= screenHeight[i]) firstWord[i].classList.add("backgroundTitle")
     }
-}
+};
 
-window.addEventListener("scroll", titleBackgroundScrioll)
+document.addEventListener("DOMContentLoaded", () => {
+    hamburger.addEventListener("click", hamburgerBtn);
+    beerInGlasse();
+    window.addEventListener("scroll", titleBackgroundScrioll);
+});
