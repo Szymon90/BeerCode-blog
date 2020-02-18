@@ -1,3 +1,4 @@
+/* start baner style */
 .baner {
     position: relative;
     top: 50px;
@@ -16,7 +17,7 @@
     position: relative;
     top: 10px;
     left: 28px;
-    }
+}
 
 .beerContainer1 {
     position: absolute;
@@ -26,7 +27,7 @@
     height: 0;
     background-color: $color-beer1;
     z-index: -1;
-    transition: 1s linear ;
+    transition: 1s linear;
 }
 
 .beerContainer2 {
@@ -37,7 +38,7 @@
     height: 0;
     background-color: $color-beer2;
     z-index: -1;
-    transition: 1s linear ;
+    transition: 1s linear;
 }
 
 .beerContainer3 {
@@ -48,7 +49,7 @@
     height: 0;
     background-color: $color-beer3;
     z-index: -1;
-    transition: 1s linear ;
+    transition: 1s linear;
 }
 
 .beerContainer4 {
@@ -59,7 +60,7 @@
     height: 0;
     background-color: $color-beer4;
     z-index: -1;
-    transition: 1s linear ;
+    transition: 1s linear;
 }
 
 .beerContainer5 {
@@ -67,15 +68,100 @@
     bottom: 257px;
     left: 10px;
     width: 134px;
-    height:0;
+    height: 0;
     background-color: $color-beer5;
     z-index: -1;
-    transition: 1s linear ;
+    transition: 1s linear;
 }
 
-.beerContainerGrow{
-height: 60px;
+.beerContainerGrow {
+    height: 60px;
 }
-.beerContainer5Grow{
-    height: 32px;  
+
+.beerContainer5Grow {
+    height: 32px;
 }
+
+.arrowZone {
+    position: absolute;
+    top: 24px;
+    left: 182px;
+    height: 300px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.arrowBox {
+    position: relative;
+    width: 133px;
+    height: 35px;
+    left: 40px;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+.arrowhead {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+   
+    width: 25px;
+    transform: rotate(45deg);
+    background-color: $color-beer1;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.arrowhead::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 11px;
+    background-color: white;
+    width: 18px;
+    height: 38px;
+    transform: rotate(135deg);
+}
+
+.rayArrow {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    width: 100px;
+    
+    background-color: $color-beer1;
+    transform: translateY(-50%);
+    transition: 1s;
+}
+
+
+@keyframes growArrow1 {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 20px;
+    }
+}
+
+@keyframes growArrow2 {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 25px;
+    }
+}
+
+.growArrow1{
+    animation: growArrow2 1s linear;
+}
+
+// rayArrow height = 20px  arrowhead height = 20px 
+/* end baner style */
