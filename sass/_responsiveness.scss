@@ -1,0 +1,88 @@
+/*8responsiveness website */
+@media screen and (min-width: 400px) {
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        left: 30px;
+    }
+
+    .formTitle {
+        left: 30px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        width: 400px;
+        left: 30px;
+        height: 650px;
+        margin-bottom: 50px;
+    }
+
+    .titleSection {
+        left: -20%;
+    }
+
+    .allArcticle {
+        width: 364px;
+        height: 110px;
+    }
+
+    .containerForImgArticle {
+        height: 121px;
+        width: 50%;
+    }
+
+    .imgArcticle {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .tetlearcticle {
+        width: 50%;
+    }
+
+    .glassBox {
+        position: relative;
+        width: 350px;
+        left: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .sideMenu {
+        width: 50%;
+    }
+
+    .sideMenu--active {
+        transform: translateX(130%);
+    }
+
+    .glassBox {
+        left: 80px;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        width: 500px;
+        left: 25px;
+        height: 650px;
+        margin-bottom: 50px;
+    }
+    form{
+        width: 60%;
+        left: 20%;
+    }
+}

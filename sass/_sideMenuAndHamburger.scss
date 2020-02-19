@@ -60,18 +60,22 @@
 
 .sideMenuNavi {
     position: relative;
-    top: 2%;
+    top: 50px;
     left: 6%;
     list-style-type: none;
+    width: 220px;
 
 }
 
 .menuElemnet {
+    width: 220px;
     font-size: 18px;
     margin-bottom: 10px;
-
+    color: white;
 }
-
+.menuElemnet:hover{
+    border-bottom: 1px solid black;
+}
 .sideMenu--active {
     transform-origin: left;
     transform: translateX(100%)

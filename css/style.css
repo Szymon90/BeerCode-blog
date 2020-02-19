@@ -108,14 +108,21 @@ header {
 
 .sideMenuNavi {
   position: relative;
-  top: 2%;
+  top: 50px;
   left: 6%;
   list-style-type: none;
+  width: 220px;
 }
 
 .menuElemnet {
+  width: 220px;
   font-size: 18px;
   margin-bottom: 10px;
+  color: white;
+}
+
+.menuElemnet:hover {
+  border-bottom: 1px solid black;
 }
 
 .sideMenu--active {
@@ -254,11 +261,10 @@ header {
   position: absolute;
   top: 5px;
   left: 10px;
-  width: 25px;
+  height: 28px;
+  width: 28px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background-color: #F2CE00;
-  overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -267,65 +273,38 @@ header {
   content: "";
   position: absolute;
   top: -12px;
-  left: 11px;
+  left: 12px;
   background-color: white;
   width: 18px;
-  height: 38px;
+  height: 40px;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
 .rayArrow {
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 16%;
   width: 100px;
-  background-color: #F2CE00;
+  height: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-transition: 1s;
   transition: 1s;
+  text-align: center;
 }
 
-@-webkit-keyframes growArrow1 {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 20px;
-  }
+.colorEBC {
+  font-size: 11px;
+  line-height: 20px;
+  color: white;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
-@keyframes growArrow1 {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 20px;
-  }
-}
-
-@-webkit-keyframes growArrow2 {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 25px;
-  }
-}
-
-@keyframes growArrow2 {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 25px;
-  }
-}
-
-.growArrow1 {
-  -webkit-animation: growArrow2 1s linear;
-          animation: growArrow2 1s linear;
+.arrowFontColor {
+  color: #6CA001;
+  color: whitesmoke;
 }
 
 /* end baner style */
@@ -358,6 +337,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.allArcticle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-right: 3px solid #6CA001;
 }
 
 .titleSection {
@@ -562,5 +550,82 @@ footer {
 .wrapper {
   height: 4270px;
   overflow: hidden;
+}
+
+/*8responsiveness website */
+@media screen and (min-width: 400px) {
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    left: 30px;
+  }
+  .formTitle {
+    left: 30px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    width: 400px;
+    left: 30px;
+    height: 650px;
+    margin-bottom: 50px;
+  }
+  .titleSection {
+    left: -20%;
+  }
+  .allArcticle {
+    width: 364px;
+    height: 110px;
+  }
+  .containerForImgArticle {
+    height: 121px;
+    width: 50%;
+  }
+  .imgArcticle {
+    height: 100%;
+    width: 100%;
+  }
+  .tetlearcticle {
+    width: 50%;
+  }
+  .glassBox {
+    position: relative;
+    width: 350px;
+    left: 50px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sideMenu {
+    width: 50%;
+  }
+  .sideMenu--active {
+    -webkit-transform: translateX(130%);
+            transform: translateX(130%);
+  }
+  .glassBox {
+    left: 80px;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    width: 500px;
+    left: 25px;
+    height: 650px;
+    margin-bottom: 50px;
+  }
+  form {
+    width: 60%;
+    left: 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

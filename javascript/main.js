@@ -23,19 +23,26 @@ const beerInGlasse = () => {
     }
 }
 //arrow animation 
-const colorArrow =["#F2F0EB","#241113","#650F0E","#DE7A25","#F2CE00"] 
+const colorArrow = ["#F2CE00", "#241113", "#650F0E", "#DE7A25", "#F2CE00"]
 const arrowBox = document.querySelectorAll(".arrowBox")
+const colorEBC = document.querySelectorAll(".colorEBC")
 const arrowPosition = () => {
-    for (let i = 0; i<5;i++){
-        if(i==0){
-            arrowBox[0].style.left = "0px"
-        } 
-        arrowBox[i].style.left = ((i*4)*(-1))+"px"
-        arrowBox[i].children[0].style.backgroundColor = colorArrow[i]
-        arrowBox[i].children[1].style.backgroundColor = colorArrow[i]
-    }
+    setTimeout(() => {
+        for (let i = 0; i < 5; i++) {
+            if (i == 0) {
+                arrowBox[0].style.left = "0px"
+
+            }
+            arrowBox[i].style.left = ((i * 4) * (-1)) + "px"
+            arrowBox[i].children[0].style.backgroundColor = colorArrow[i]
+            arrowBox[i].children[1].style.backgroundColor = colorArrow[i]
+            colorEBC[i].classList.add("arrowFontColor")
+        }
+    }, 5500)
+
+
 }
-   
+
 
 
 
@@ -55,5 +62,6 @@ const titleBackgroundScrioll = () => {
 document.addEventListener("DOMContentLoaded", () => {
     hamburger.addEventListener("click", hamburgerBtn);
     beerInGlasse();
+    arrowPosition()
     window.addEventListener("scroll", titleBackgroundScrioll);
 });
