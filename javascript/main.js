@@ -1,8 +1,10 @@
-//hamburger menu 
 const hamburger = document.querySelector(".hamburger");
 const sideMenu = document.querySelector(".sideMenu");
 const wrapper = document.querySelector(".wrapper");
-
+const colorArrow = ["#F2CE00", "#241113", "#650F0E", "#DE7A25", "#F2CE00"]
+const arrowBox = document.querySelectorAll(".arrowBox")
+const colorEBC = document.querySelectorAll(".colorEBC")
+//hamburger menu
 const hamburgerBtn = () => {
     hamburger.classList.toggle("hamburger--active")
     sideMenu.classList.toggle("sideMenu--active")
@@ -23,9 +25,6 @@ const beerInGlasse = () => {
     }
 }
 //arrow animation 
-const colorArrow = ["#F2CE00", "#241113", "#650F0E", "#DE7A25", "#F2CE00"]
-const arrowBox = document.querySelectorAll(".arrowBox")
-const colorEBC = document.querySelectorAll(".colorEBC")
 const arrowPosition = () => {
     setTimeout(() => {
         for (let i = 0; i < 5; i++) {
@@ -42,12 +41,6 @@ const arrowPosition = () => {
 
 
 }
-
-
-
-
-
-
 // article title background scroll
 const titleBackgroundScrioll = () => {
     const firstWord = document.querySelectorAll(".firstWordTitle");
@@ -65,3 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
     arrowPosition()
     window.addEventListener("scroll", titleBackgroundScrioll);
 });
+
+

@@ -12,9 +12,18 @@
     .formTitle {
         left: 30px;
     }
+
+    .containerForImgArticle {
+        height: 100%;
+    }
 }
 
+
+
 @media screen and (min-width: 500px) {
+    .wrapper {
+        height: 4440px;
+    }
 
     .section1,
     .section2,
@@ -56,9 +65,18 @@
         width: 350px;
         left: 50px;
     }
+
+    .containerForImgArticle {
+        height: 100%;
+    }
 }
 
+
 @media screen and (min-width: 600px) {
+    .wrapper {
+        height: 4990px;
+    }
+
     .sideMenu {
         width: 50%;
     }
@@ -81,8 +99,163 @@
         height: 650px;
         margin-bottom: 50px;
     }
-    form{
+
+    form {
         width: 60%;
         left: 20%;
     }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        width: 600px;
+        left: 25px;
+        height: 760px;
+    }
+
+    .titleSection {
+        left: -22%;
+        font-size: 22px;
+        width: 260px;
+    }
+
+    .allArcticle {
+        height: 150px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .baner {
+        height: 520px;
+    }
+
+    .titleSection {
+        width: 260px;
+        left: -30%;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        left: 100px;
+    }
+
+    .wrapper {
+        height: 5151px;
+    }
+
+    form {
+        width: 50%;
+        left: 25%;
+    }
+
+    .glassBox {
+        left: 65px;
+        top: 65px;
+    }
+
+    .banerText {
+        position: absolute;
+        display: block;
+        left: 60%;
+        top: 25%;
+        height: 200px;
+        width: 200px;
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 4px solid $color-hop;
+        border-right: 4px solid $color-hop;
+    }
+
+    .sideMenu {
+        width: 30%;
+        left: -69%;
+    }
+
+    .sideMenu--active {
+        transform: translateX(230%);
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .glassBox {
+        left: 30%;
+        top: 65px;
+    }
+
+    form {
+        width: 33%;
+        left: 33%;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5 {
+        left: 0;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .titleSection {
+        position: absolute;
+        left: 62px;
+        top: 0;
+    }
+
+    .allArcticle {
+        height: 45%;
+        width: 45%;
+    }
+
+    .arcticle1,
+    .arcticle4 {
+        height: 35%;
+        width: 50%;
+    }
+
+    .arcticle2,
+    .arcticle3 {
+        height: 30%;
+        width: 35%;
+    }
+
+    .tetlearcticle {
+        font-size: 20px;
+    }
+
+    .readMore {
+        position: absolute;
+        left: calc(50% - 121px);
+        bottom: 0;
+    }
+
+    .formTitle {
+        left: 5%;
+    }
+
+    .containerForImgArticle {
+        font-size: 123px;
+    }
+
+    form {
+        width: 33%;
+        left: 33%;
+        border-radius: 0px 0px 86px 0px;
+        border: 0px solid #000000;
+    }
+
 }
